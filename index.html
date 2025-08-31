@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>뉴비</title>
+
+  <!-- 파비콘 설정 (오른쪽 이미지 재사용) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="right-image.png">
+  <link rel="shortcut icon" href="right-image.png" type="image/png">
+
+  <style>
+    /* 웹용 WOFF/WOFF2 폰트 직접 호스팅 */
+    @font-face {
+      font-family: 'SacheonHangGong';
+      src: url('fonts/SacheonHangGong-Regular.woff2') format('woff2'),
+           url('fonts/SacheonHangGong-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      background-color: #ffffff;
+      font-family: 'SacheonHangGong', sans-serif; /* 전체 글씨 폰트 */
+    }
+
+    /* 상단 바 */
+    .top-bar {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      background-color: #5170ff;
+      box-sizing: border-box;
+    }
+
+    .top-bar img {
+      height: 40px;
+      width: auto;
+    }
+
+    /* 본문 컨텐츠 */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px;
+      height: calc(100vh - 60px);
+      box-sizing: border-box;
+      gap: 40px;
+      position: relative;
+    }
+
+    /* 중앙 텍스트 */
+    .middle-text {
+      font-size: 48px;
+      font-weight: bold;
+      color: #5170ff; /* 상단바 색과 동일 */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    /* 버튼 그룹 */
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;      /* 버튼 사이 간격 넓게 */
+      max-width: 700px;
+      position: absolute;
+      bottom: 50px;    /* 아래쪽 간격 */
+      left: 150px;     /* 왼쪽 여백 충분히 */
+    }
+
+    .button-group a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 500px;    /* 버튼 폭 */
+      height: 80px;        /* 세로 크기 줄임 */
+      background-color: #5170ff;
+      color: white;
+      text-decoration: none;
+      font-size: 28px;      /* 글씨 크기 */
+      font-weight: bold;
+      border-radius: 10px;
+      padding-top: 0.3cm;    /* 위쪽 여백 */
+      padding-bottom: 0.3cm; /* 아래쪽 여백 */
+      padding-left: 2cm;     /* 좌우 여백 */
+      padding-right: 2cm;
+      box-sizing: border-box;
+      font-family: 'SacheonHangGong', sans-serif; /* 버튼 폰트 */
+      transition: none;
+    }
+
+    .button-group a:hover {
+      background-color: #5170ff;
+    }
+
+    /* 오른쪽 이미지 */
+    .content img {
+      max-width: 700px;  /* 이미지 크기 유지 */
+      width: 100%;
+      height: auto;
+      position: relative;
+      left: 20px; /* 오른쪽으로 조금 이동 */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 상단 바 -->
+  <div class="top-bar">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <!-- 본문 -->
+  <div class="content">
+    <!-- 중앙 텍스트 -->
+    <div class="middle-text">로블록스 유저 정보를 디스코드로</div>
+
+    <!-- 버튼 그룹 -->
+    <div class="button-group">
+      <a href="https://discord.com/oauth2/authorize?client_id=1393790364892270712&scope=bot&permissions=0" target="_blank">봇 초대</a>
+      <a href="https://discord.com/invite/YMS4mkyJnN" target="_blank">서포트 서버</a>
+    </div>
+
+    <!-- 오른쪽 이미지 -->
+    <img src="right-image.png" alt="Right Image">
+  </div>
+
+</body>
+</html>
